@@ -113,16 +113,20 @@ Before you begin:
 
 Requirement	Example
 
-  Argo CD installed	✅ already done
-  Access to Argo CD Web UI or CLI	via NodePort or argocd CLI
-  A GitHub repository	e.g. https://github.com/ahmed-devops/my-k8s-app
-  Repo contains manifests	e.g. /manifests/deployment.yaml, /service.yaml
+    Argo CD installed	✅ already done
+    
+    Access to Argo CD Web UI or CLI	via NodePort or argocd CLI
+    
+    A GitHub repository	e.g. https://github.com/ahmed-devops/my-k8s-app
+    
+    Repo contains manifests	e.g. /manifests/deployment.yaml, /service.yaml
 
   ### 🪜 Step 1: Create or use a GitHub repo
 
 Example repo structure:
 
 my-k8s-app/
+
  ├── manifests/
  │   ├── deployment.yaml
  │   └── service.yaml
@@ -137,7 +141,7 @@ https://github.com/<your-username>/my-k8s-app
 
 Open Argo CD in your browser:
 
-http://<node-ip>:<nodeport>
+http://node-ip:nodeport
 
 
 Login with:
