@@ -69,13 +69,14 @@ Check the new port:
 
 Example output:
 
-  NAME            TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
-  argocd-server   NodePort   10.43.126.153   <none>        80:30910/TCP     5m
+   NAME            TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+  
+   argocd-server   NodePort   10.43.126.153   <none>        80:30910/TCP     5m
 
   ##### ➡️ Here, 30910 is the NodePort.
 You can now access Argo CD via:
 
-http://<any-cluster-node-ip>:30910
+http://any-cluster-node-ip:30910
 
 #### 4️⃣ Get the Argo CD Admin Password
 
