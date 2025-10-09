@@ -82,21 +82,26 @@ http://any-cluster-node-ip:30910
 
 Argo CD creates a secret for the initial admin user:
 
-  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; ech
+   kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; ech
 
 
 #### 5️⃣ Log in to the Argo CD Web UI
 
 Go to your browser:
 
-http://<any-node-ip>:<nodeport>
+http://any-node-ip:nodeport
 
 
 Then:
 
-  Username: admin
-  Password: <output from previous command>
+   Username: admin
+
+   Password: output from previous command
+   
+  
+   
 ----
+
 
 ## 🔄 Connect Argo CD to GitHub (GitOps Integration)
 
