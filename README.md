@@ -38,7 +38,7 @@ kubectl create namespace argocd
 
 Apply the official stable manifest:
 
-  kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.
+  kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
 Check resources:
 
